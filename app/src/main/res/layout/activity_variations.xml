@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/variationLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonsCardView"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="248dp"
+                    android:orientation="vertical">
+
+                    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        app:ci_drawable="@drawable/heart_on"
+                        app:ci_drawable_unselected="@drawable/heart_off" />
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/withoutVariationCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Product Details"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Name"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/nameTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Actual Price"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/actualpriceTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Original Price"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/sellingPriceTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Availability"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/availabilityWithoutVariationTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="About"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/descriptionTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:paddingTop="2dp"
+                            android:textSize="15dp"
+                            android:typeface="sans" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/withSingleVariationCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Product Details"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Name"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/nameVariation1TextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="About"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/descriptionVariation1TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:paddingTop="2dp"
+                            android:textSize="15dp"
+                            android:typeface="sans" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Range"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/range1TextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:paddingTop="2dp"
+                                    android:textSize="15dp"
+                                    android:typeface="sans" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <TextView
+                                android:id="@+id/range2TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:paddingTop="2dp"
+                                android:textSize="15dp"
+                                android:typeface="sans" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Size"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <Spinner
+                            android:id="@+id/variationSizeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></Spinner>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Price"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/priceSingleVariationTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:paddingTop="2dp"
+                            android:textSize="15dp"
+                            android:typeface="sans" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:padding="2dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Availability"
+                                    android:textSize="15dp"
+                                    android:typeface="sans" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:padding="2dp">
+
+                                <TextView
+                                    android:id="@+id/availabilityWithSingleVariationTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textSize="15dp"
+                                    android:typeface="sans" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/withDoubleVariationCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Product Details"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Name"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/nameVariation2TextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textSize="15dp"
+                                        android:typeface="sans" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="About"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/descriptionVariation2TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:paddingTop="2dp"
+                            android:textSize="15dp"
+                            android:typeface="sans" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Range"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/range1VariationDoubleTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:paddingTop="2dp"
+                                    android:textSize="15dp"
+                                    android:typeface="sans" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <TextView
+                                android:id="@+id/range2VariationDoubleTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:paddingTop="2dp"
+                                android:textSize="15dp"
+                                android:typeface="sans" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Weight"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <Spinner
+                            android:id="@+id/variationWeightSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></Spinner>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Flavours"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <Spinner
+                            android:id="@+id/variationFlavoursSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></Spinner>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Price"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#00134d"
+                            android:textSize="20dp"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/priceDoubleVariationTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:paddingTop="2dp"
+                            android:textSize="15dp"
+                            android:typeface="sans" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:padding="2dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Availability"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                    android:textSize="20dp"
+                                    android:typeface="sans" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:padding="2dp">
+
+                                <TextView
+                                    android:id="@+id/availabilityWithDoubleVariationTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textSize="15dp"
+                                    android:typeface="sans" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/buttonsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/addToCartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Add to cart"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/buyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:text="Buy" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

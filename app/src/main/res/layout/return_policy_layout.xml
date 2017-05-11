@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/aboutScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:id="@+id/privacyPolicyHeadTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Return Policy"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+
+                    <ImageView
+
+                        android:id="@+id/shopingguruLogoImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/privacyPolicyHeadTextView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shopping_guru_logo" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shopingguruLogoImageView"
+                        android:layout_margin="10dp"
+                        android:text="If order is processed and delivered, the items won’t be taken back or replaced unless there is a reasonable manufacturing issue. In case the product need to be returned for disliking or any other reason then it has to return immediately without unpacking the item completely or using it in any manner.
+
+Customer won’t get any refund for partially or fully used items. In all other cases, the refund will be the total order value less 15% of it, before shipping/reshipping cost if any. If any shipping charges involved, won’t be refunded. Any cost involved for reshipping shall be borne by the sender.
+
+If the delivery is not executed during first attempt due to incorrect or insufficient address, recipient not at home, address found locked or refusal to accept, the customer shall still be charged for the order. No refunds would be entertained for such items
+
+Please note that cancellations have to be made within 1 hour after placing an order. For canceling your order, you will have to get in touch with our customer support executive by sending an email to info@shopingguru.in and giving the reference of your order number.
+
+In case we receive a cancellation notice and till that time the order has already been processed by us, the order cannot be cancelled.
+
+shopingguru.in has complete right to decide whether an order has been processed or not. The customer agrees not to dispute the decision made by shopingguru.in and accept shopingguru.in decision regarding the cancellation.
+
+shopingguru.in will not be liable to pay/refund, any charges by bank at the time of processing the payment at the time of refund processing.
+
+shopingguru.in will not refund the amount charged to it as instrument bouncing charges on processing of refund."></TextView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+</RelativeLayout>

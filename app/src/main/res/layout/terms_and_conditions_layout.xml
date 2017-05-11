@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/aboutScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="450dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:id="@+id/privacyPolicyHeadTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Terms and Conditions"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+
+                    <ImageView
+
+                        android:id="@+id/shopingguruLogoImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/privacyPolicyHeadTextView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shopping_guru_logo" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shopingguruLogoImageView"
+                        android:layout_margin="10dp"
+                        android:text="The Agreement
+
+We are bringing to the notice the terms and conditions to protect in the interest of our valued customers and the company.
+
+In using the Shopingguru.in shopping service, you (The User) are deemed to have accepted the terms and conditions listed below. Shopingguru.in reserves the right to modify these terms and conditions at any point of time. We request the customer to go through the refund policies of company carefully before ordering. Also we strongly recommend to print a copy of the below mentioned terms and conditions for any future reference.
+
+This Agreement (the “Agreement”) is a legal agreement between you and Shopingguru.in. Below you will find detailed legal terms and agreements of our service.
+
+shopingguru.in will try to deliver the products as per the specifications given on the order form by the user, it fully reserves a right to deliver a similar or alternate product for reasons beyond its control and any such action shall not be deemed as bad-delivery.
+
+Registration Account details:- You agree to provide Shopinguru.in with accurate and complete information as required by registration, (“Customer Registration Data”), including, but not limited to, your legal name, billing and delivery addresses, telephone number and promptly to notify Shopingguru.in of any change in your Customer Registration Data. Upon registration, you will be allowed to access and place order on Shopingguru.in . Your password should be kept strictly confidential to prevent unauthorized use. You agree to notify Shopingguru.in immediately of any unauthorized use of your password.
+
+Shopingguru.in  will deliver the Product ordered through us in perfect condition.
+
+Shopingguru.in will start to process the order right away once you place the order successfully with us. Please give us reasonable day time for secured and proper delivery.
+
+When you opt Cash on Delivery, Shopingguru.in  always try making a confirmation about the order over phone before delivery. Exact amount of Cash will be collected when the order is delivered. Cancelling of order during the delivery time will not be accepted.
+
+Every care shall be taken to deliver the goods to the intended recipient. But Shopingguru.in  shall not be held responsible for any wrong delivery of the product based on the address given by the customer or if any person imposes to be the actual recipient and takes delivery of goods.
+
+Products and their Prices are subject to change without prior notice by manufacturer or Shopingguru.in .
+
+Products availability is subject to change without prior notice by Shopingguru.in .
+
+Shopingguru.in  reserves the right to refuse or cancel any order placed for a product that is listed at an incorrect price or ‘Out of Stock’ status. This shall be regardless of whether the order has been confirmed and/or payment been levied via credit card. In the event the
+
+payment has been processed by Shopingguru.in  the same shall be credited to your credit card account and duly notified to the customer with a reasonable mode.
+
+In a transaction done by credit card, you must use your own credit card. Shopingguru.in  will not be liable for any credit card fraud. The liability to use a card fraudulently will be on the user and the onus to ‘prove otherwise’ shall be exclusively on the user.
+
+Any request for cancellations of orders once duly placed on the site, shall not be entertained.
+
+The product provided on this site are without warranties of any kind either expressed or implied and Shopingguru.in  disclaims all or any of them to the fullest extent. Any warranties or After Sale Services if any offered by the Manufacturers/Vendors on any product shall be serviced directly by such Manufacturer/Vendor and Shopingguru.in  shall not be under any obligation to ensure compliance or handle complaints.
+
+The images of products casted on Shopingguru.in  are an image as per the original vendor’s products. Shopingguru.in  reserves no right on these images and right for them are reserved with the original vendors only."></TextView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

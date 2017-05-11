@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/aboutScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:id="@+id/privacyPolicyHeadTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shopingguruLogoImageView"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+
+                    <ImageView
+
+                        android:id="@+id/shopingguruLogoImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shopping_guru_logo" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/privacyPolicyHeadTextView"
+                        android:layout_margin="10dp"
+                        android:text="Shopingguru.in assures a complete privacy to all the information shared by our customers with us. Our commitment to your privacy is reflected in the data processing practice and the way these data are used. All of our data processing, that also involves a participation of our affiliates, and agents, are governed by the Privacy Policy of our site. Though we have a very clear aim in our Privacy Policies, some changes might be introduced among these Policies with time. It is suggested to the customers to review our Privacy Policy section to assure themselves complete information, as the current privacy policy shall be in effect, instead of the policies stated prior to the updated policies. If you have any objections to the policies, you may feel free to contact us, or immediately discontinue with the services offered by us. For any further information or queries related to our services, you may contact us at info@shopingguru.in Please have a look at our privacy policy section:
+
+Source of Our Information
+
+Our source of information is the details shared by you at the time of registration, feedback provided by you on our services, and the transactions made along the payment card details. Besides, we compute the popularity of our services through the competitions, promotions, and the traffic that our site generates. Through this wholesome approach we collect the information through the experiences of our customers with us, which helps us know what additions you want in our services.
+
+Security Measures
+
+We understand the importance of privacy of your personal information. We have a very sensitive approach towards these security measures, for which we follow a well developed program. Whenever you place a sensitive information on our site, it immediately gets encrypted, through secure socket layer technology(SSL), ensuring a no leak of information. In a span of 92 days, the payment card data gets automatically destroyed by default, as we understand that no online transaction or an electronic storage can assure safety. These security steps come in affiliation with the accepted industry standards of security to assure you maximum protection of your money.
+
+Contact Preferences
+
+Knowledge of your preferences shall help us serve you better. We shall use your contact details to extend you information related to Shopingguru.in or of some other well selected companies. We might get in touch with you through fax, emails, postal services, and telephone. We would appreciate your suggestions and feedbacks from time to time, which will help us in recognizing your requirements and work to bring you a complete satisfaction. However, you can also cease any further commercial communications, by contacting at info@shopingguru.in. Customers are informed that there might be instances when it shall be important to deliver your some information by the administration, for operational reasons.
+
+Disclosures of your information
+
+Our customers can trust us with their information, which shall not be passed to anyone outside Shopingguru.in administration. The information shall only be shared by Shopingguru.in companies, to process data or we might disclose some information in bulk, to conceal your identity to benefit the marketing programmes, advertisers and partners. However, we assure that no personal information shall be shared for any targeted advertisement. And in case there is a merger of Shopingguru.in with any other company, customers will be notified before they are subjected to a new set of Privacy Policies.
+
+Cookies
+
+Cookies are a good means of tracking the popularity of a certain site, and the consumer’s interest. Cookies, which are a small piece of information sent by a web server to a web browser, enabling the server to collect information from the browser, proves to be a good source of multiple purposes. Shopingguru.in makes an intelligent use of logging on process of registration, to bring a mechanism to conduct online shopping and traffic monitoring, and most importantly, to ensure the authenticity and security of the consumers. We perfect this technique by employing both, the ID cookies and the persistent cookies, in which the persistent cookies don’t get dysfunctional for a long time.
+
+Access to Retail Loyalty Card information
+
+Our aim is to serve you the best with all the products of your choice. To help us improve our services to you, we shall take an access to your choice of the products in the grocery store. How will it be achieved? Whenever a customer will purchase something on royalty card, through our online service, the product shall automatically get registered in your favourite Products. It shall not only help us in detecting your preferences, rather it shall also bring strong statistical data. We might take access to your Royalty Card Information."></TextView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

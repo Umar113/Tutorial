@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/aboutScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:id="@+id/privacyPolicyHeadTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shopingguruLogoImageView"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Return Policy"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+
+                    <ImageView
+
+                        android:id="@+id/shopingguruLogoImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shopping_guru_logo" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/privacyPolicyHeadTextView"
+                        android:layout_margin="10dp"
+                        android:text="Refunds will be made in the same form that the payment is received within 10 working days from the date of cancellation of order."></TextView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

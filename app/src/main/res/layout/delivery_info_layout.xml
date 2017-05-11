@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/aboutScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:id="@+id/deliveryInfoTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shopingguruLogoImageView"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Delivery Infromation"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+
+                    <ImageView
+
+                        android:id="@+id/shopingguruLogoImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shopping_guru_logo" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/deliveryInfoTextView"
+                        android:layout_margin="10dp"
+                        android:text="Shopingguru.in offers the best delivery features for our clients; we will try to get your ordered products to you at the best minimum time. We are here to make shopping better for you and also to save your valuable time.
+
+Customers can order in between 9AM to7PM and we will deliver groceries immediate in next 1 hour in same day.
+
+* We take one order at one time. Multiple orders can be placed at same address but they will be counted as separate orders each.
+
+* For orders of two different addresses, separate orders have to be placed as they will be delivered to separate addresses.
+
+* If more than two orders are placed for same address at different time slots, we will try to deliver them together, if possible, else will be delivered according to our delivery chart.
+
+* Each order will be delivered to a single address, we will call to confirm the order and expect that someone might be present at the given address to receive the order at given time, failing which we will not be responsible for any further delay in the delivery.
+
+* For orders on Cash on delivery mode, please be ready with the complete cash or else choose our Card payment on delivery mode for payment of order.
+
+* We will take orders everyday 24×7 but will not provide delivery after 9PM.
+
+* Any changes in the order or cancellation must be informed within half an hour of placing the order and after that no changes will be done and customer have to pay for complete order.
+
+* We will take orders of Nagpur only as we are providing delivery in Nagpur only till any further expansions are done.
+
+We are here to serve you better by providing best alternatives of problems faced in shopping household goods. We are working day and night to make this service much better than present and will surely inform about any changes made in the policies."></TextView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/billingAddCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/billingAddTitleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="cursive"
+                            android:text="Billing Address"
+                            android:textColor="@color/Black"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/billingFirstNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/billingAddTitleTextView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="No Billing Address set yet."
+                            android:textColor="@color/Gray"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/editNewBillingAddButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/billingFirstNameTextView"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/login_button_new"
+                            android:text="Edit Billing Address"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/deliveryAddCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/billingAddCardView"
+                    android:layout_marginTop="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/deliveryAddTitleTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="cursive"
+                            android:text="Shipping Address"
+                            android:textColor="@color/Black"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/deliveryAddTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/deliveryAddTitleTextView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="No Delivery Address set yet."
+                            android:textColor="@color/Gray"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/editNewShippingAddButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/deliveryAddTextView"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/login_button_new"
+                            android:text="Edit Shipping Address"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/deliveryAddCardView"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/login_button_new"-->
+                <!--android:text="Login"-->
+                <!--android:textSize="20dp" />-->
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

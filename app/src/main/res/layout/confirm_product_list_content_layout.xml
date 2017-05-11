@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/confirmProductCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <ImageView
+                        android:id="@+id/confirmProductImageView"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:id="@+id/confirmProductNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/confirmProductImageView"
+                        android:text="aa"
+                        android:textColor="@color/Black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/confirmProductFlavorSingleVarTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/confirmProductNameTextView"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/confirmProductImageView"
+                        android:text="flavor"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/confirmProductSizeSingleVarTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/confirmProductFlavorSingleVarTextView"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/confirmProductImageView"
+                        android:text="size"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/confirmProductPriceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/confirmProductSizeSingleVarTextView"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/confirmProductImageView"
+                        android:maxLines="1"
+                        android:text="aa"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:id="@+id/quantityMultiplyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/confirmProductSizeSingleVarTextView"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/confirmProductPriceTextView"
+                        android:text="1"
+                        android:textColor="@color/Black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/totalPriceTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quantityMultiplyTextView"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/confirmProductImageView"
+                        android:text="total"
+                        android:textColor="@color/Black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:id="@+id/quantityLineaLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/totalPriceTextView"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/confirmProductImageView"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decreaseQuatityButton"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="-" />
+
+
+                        <TextView
+                            android:id="@+id/quantityTextView"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="1"
+                            android:textColor="@color/Black"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/increaseQuatityButton"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="+" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/placeOrderButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quantityLineaLayout"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="Place Order" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

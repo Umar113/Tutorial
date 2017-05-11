@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/White">
+
+
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile_pic_default" />
+
+        <TextView
+            android:id="@+id/productTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="17"
+            android:singleLine="true"
+            android:text="Product Name"
+            android:textColor="@color/Black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/sellingPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productTitleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Rs. 1000"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/originalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sellingPriceTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Rs. 2000"
+            android:textColor="@color/Gray"
+            android:textSize="12dp" />
+
+
+        <ImageView
+            android:id="@+id/like_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/productImageView"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

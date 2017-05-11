@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cartTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Cart"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/cart_listView_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cartTitleTextView"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/cartNoItemTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="No Item in your Cart"
+        android:textColor="@color/Gray"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/goShoppingCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cartNoItemTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/basic_black_button"
+        android:text="Go Shopping"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Shopingguru.in</string>
+
+    <string name="user_name">Name</string>
+    <string name="logout_text">Logout</string>
+
+    <string name="logout_message">Are you sure you want to Logout?</string>
+    <string name="yes_logout_button">Yes</string>
+    <string name="no_logout_button">No</string>
+    <string name="return_cancellation">Return and cancellation</string>
+    <string name="title_activity_main_activity_new">MainActivityNew</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="product_title">Product Name</string>
+    <string name="toastBack">Press Back again to Exit!</string>
+    <string name="start">GOT IT</string>
+    <string name="next">NEXT</string>
+    <string name="indian_rupee"><b>₹</b> </string>
+    <string name="payment_method">Payment Method</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+
+
+</resources>

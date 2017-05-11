@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/aboutScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/aboutUsHeadTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="About Us"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:id="@+id/shopingguruLogoImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/aboutUsHeadTextView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shopping_guru_logo" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shopingguruLogoImageView"
+                        android:layout_margin="10dp"
+                        android:text="Shopingguru.in is first online store started in Nagpur District. With over 2500 products and over 500 brands in our catalog you will find everything you are looking for in a online site.
+
+Choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at the lowest prices. Select your products keep track of cut-off time for delivery and your order will be delivered right to your door step, anywhere in Nagpur District. You can pay by cash, credit/debit card or online. We guarantee on time delivery and the best quality.
+
+Shopingguru.in  allows you to walk away from the drudgery of grocery shopping and welcome an easy relaxed way of browsing and shopping for wide collection of items. Discover new products and shop  needs from the comfort of your home or office. No more getting stuck in traffic jams, paying for parking, standing in long queues and carrying heavy bags – get everything you need, when you need, right at your doorstep. Online shopping  is now easy as every product on your monthly shopping list is now available online at www.shopingguru.in
+
+Happy Shopping!"></TextView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

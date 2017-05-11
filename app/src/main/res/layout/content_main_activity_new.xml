@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.MainActivityNew"
+    tools:showIn="@layout/app_bar_main_activity_new">
+    <!--        app:showAsAction="always|collapseActionView"-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/searchCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+        <SearchView
+            android:id="@+id/searchSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_weight="0.7"
+            android:clickable="true"
+            android:hint="Search"
+            android:iconifiedByDefault="false"
+            android:inputType="text"
+            android:queryHint="Search"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchCardView"
+        android:layout_marginTop="0dp">
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myCardFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_shopping_cart_black_24dp"
+        app:backgroundTint="@color/shopingguruBlue" />
+
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/myCardFAB"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_fiber_manual_record_black_24dp"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/bannerViewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_marginTop="4dp">-->
+
+    <!--<android.support.v4.view.PagerTitleStrip-->
+    <!--android:id="@+id/pager_tab_strip"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="@color/white"-->
+    <!--android:textColor="@color/Gray" />-->
+
+    <!--</android.support.v4.view.ViewPager>-->
+
+
+</RelativeLayout>

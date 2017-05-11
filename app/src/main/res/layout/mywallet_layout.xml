@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/grayBroadline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gray_broad_line" />
+
+    <RelativeLayout
+        android:id="@+id/voucherRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grayBroadline1"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:id="@+id/voucherTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Voucher"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/grayLineImageView"
+            android:layout_below="@+id/voucherTextView"
+            android:text="Apply a Voucher"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/rupayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/grayLineImageView"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="75dp"
+            android:background="@drawable/rupay"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/grayLineImageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/rupayTextView"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/ic_cancel_black_24dp"
+            android:gravity="center"
+            android:text="0."
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/grayLineImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/voucherTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gray_line" />
+
+
+        <TextView
+            android:id="@+id/addVoucherTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/grayLineImageView"
+            android:gravity="center"
+            android:text="Add Voucher"
+            android:textColor="@color/DeepSkyBlue"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/grayBroadline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/voucherRelativeLayout"
+        android:src="@drawable/gray_broad_line" />
+
+
+    <RelativeLayout
+        android:id="@+id/cardRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grayBroadline2">
+
+        <TextView
+            android:id="@+id/cardTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Save Cards"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/saveCardDetailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardTextView"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Save Your debit/credit cards here. Dont worry your cards are completely safe with us"
+            android:textColor="@color/DarkSlateGray" />
+
+
+        <ImageView
+            android:id="@+id/graLineImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saveCardDetailsTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gray_line" />
+
+
+        <TextView
+            android:id="@+id/saveCardsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/graLineImageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Saved Cards"
+            android:textColor="@color/DeepSkyBlue"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

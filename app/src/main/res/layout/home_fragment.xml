@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/bannerViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="4dp">
+
+
+                    </android.support.v4.view.ViewPager>
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/bannerCircleIndicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/bannerViewPager"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        app:ci_drawable="@drawable/heart_on"
+                        app:ci_drawable_unselected="@drawable/heart_off"
+                        app:ci_gravity="center" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_pager"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Products"
+                    android:textColor="@color/Black"
+                    android:textSize="22dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.example.android.shopinggururegister.Helpers.HorizontalListView
+                    android:id="@+id/hlvProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="#FFF"
+                    android:divider="#E0E0E0"
+                    android:fadingEdgeLength="5dp"
+                    android:requiresFadingEdge="horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_pager"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Must Have"
+                    android:textColor="@color/Black"
+                    android:textSize="22dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.example.android.shopinggururegister.Helpers.HorizontalListView
+                    android:id="@+id/hlvMusthave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="#FFF"
+                    android:divider="#E0E0E0"
+                    android:fadingEdgeLength="5dp"
+                    android:requiresFadingEdge="horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_pager"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Best Seller"
+                    android:textColor="@color/Black"
+                    android:textSize="22dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.example.android.shopinggururegister.Helpers.HorizontalListView
+                    android:id="@+id/hlvBestSeller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="#FFF"
+                    android:divider="#E0E0E0"
+                    android:fadingEdgeLength="5dp"
+                    android:requiresFadingEdge="horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_pager"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Special Offers"
+                    android:textColor="@color/Black"
+                    android:textSize="22dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.example.android.shopinggururegister.Helpers.HorizontalListView
+                    android:id="@+id/hlvSpecialOffers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="#FFF"
+                    android:divider="#E0E0E0"
+                    android:fadingEdgeLength="5dp"
+                    android:requiresFadingEdge="horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
